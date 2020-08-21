@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 const Login = () => import('components/Login')
 const Home = () => import('components/Home')
+const Welcome = () => import('components/Welcome')
+const UserList = () => import('components/user/UserList')
 Vue.use(VueRouter)
 
 const routes = [
@@ -18,8 +20,15 @@ const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
-  }
+    component: Home,
+    redirect: '/welcome',
+
+    children: [
+      { path: '/welcome', name: 'Welcome', component: Welcome },
+      { path: '/userList', name: 'UserList', component: UserList },
+    ]
+  },
+
 
 ]
 
@@ -36,7 +45,7 @@ router.beforeEach((to, from, next) => {
     return;
   } else {
     const tokenStr = window.localStorage.getItem('token');
-    !tokenStr ? next('/login') : next();
+    tokenStr ? next() : next('/login');
   }
 
 })
@@ -44,7 +53,7 @@ router.beforeEach((to, from, next) => {
 
 // 解决Vue-Router升级导致的Uncaught(in promise) navigation guard问题
 const originalPush = VueRouter.prototype.push
-VueRouter.prototype.push = function push (location, onResolve, onReject) {
+VueRouter.prototype.push = function push(location, onResolve, onReject) {
   if (onResolve || onReject) return originalPush.call(this, location, onResolve, onReject)
   return originalPush.call(this, location).catch(err => err)
 }

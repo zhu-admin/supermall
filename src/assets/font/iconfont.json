@@ -6,6 +6,83 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5321813",
+      "name": "用户管理",
+      "font_class": "geren",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "8881508",
+      "name": "商品管理",
+      "font_class": "shangpinguanli",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "10471570",
+      "name": "数据统计",
+      "font_class": "shujutongji-copy",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "15389644",
+      "name": "权限管理",
+      "font_class": "permission",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "16308161",
+      "name": "订单管理",
+      "font_class": "icon-dingdan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "3926237",
+      "name": "齿轮",
+      "font_class": "chilun",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "3133678",
+      "name": "管理系统",
+      "font_class": "oracle",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6684369",
+      "name": "纸飞机",
+      "font_class": "zhifeiji",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "7688040",
+      "name": "首页-选中",
+      "font_class": "yemian-copy-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "9624828",
+      "name": "系统工具",
+      "font_class": "xitong_gongjuxiang",
+      "unicode": "e71b",
+      "unicode_decimal": 59163
+    },
+    {
+      "icon_id": "10135741",
+      "name": "系统监控",
+      "font_class": "xitongjiankong",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
       "icon_id": "13981735",
       "name": "用户名",
       "font_class": "xingmingyonghumingnicheng",

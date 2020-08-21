@@ -103,10 +103,7 @@ export default {
             this.loginForm.password === this.userLogin.password
           ) {
             this.$message({ message: "登录成功", type: "success" });
-            window.localStorage.setItem(
-              "token",
-              JSON.stringify({ token: "token" })
-            );
+            window.localStorage.setItem("token", "token");
             setTimeout(() => {
               this.$router.push("/home");
             }, 1000);
